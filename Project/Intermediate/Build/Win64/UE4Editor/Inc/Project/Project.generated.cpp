@@ -12,7 +12,7 @@ void EmptyLinkFunctionForGeneratedCodeProject() {}
 	void AProjectCharacter::StaticRegisterNativesAProjectCharacter()
 	{
 	}
-	IMPLEMENT_CLASS(AProjectCharacter, 3480672671);
+	IMPLEMENT_CLASS(AProjectCharacter, 1936901747);
 	void AProjectGameMode::StaticRegisterNativesAProjectGameMode()
 	{
 	}
@@ -49,8 +49,8 @@ void EmptyLinkFunctionForGeneratedCodeProject() {}
 
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-				UProperty* NewProp_IdleAnimation = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("IdleAnimation"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(IdleAnimation, AProjectCharacter), 0x0000080000000005, Z_Construct_UClass_UPaperFlipbook_NoRegister());
-				UProperty* NewProp_RunningAnimation = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("RunningAnimation"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(RunningAnimation, AProjectCharacter), 0x0000080000000005, Z_Construct_UClass_UPaperFlipbook_NoRegister());
+				UProperty* NewProp_Astronaut_Idle2 = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Astronaut_Idle2"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(Astronaut_Idle2, AProjectCharacter), 0x0000080000000005, Z_Construct_UClass_UPaperFlipbook_NoRegister());
+				UProperty* NewProp_Astronaut_Walk = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Astronaut_Walk"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(Astronaut_Walk, AProjectCharacter), 0x0000080000000005, Z_Construct_UClass_UPaperFlipbook_NoRegister());
 				UProperty* NewProp_CameraBoom = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraBoom"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(CameraBoom, AProjectCharacter), 0x00000000000a001d, Z_Construct_UClass_USpringArmComponent_NoRegister());
 				UProperty* NewProp_SideViewCameraComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SideViewCameraComponent"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(SideViewCameraComponent, AProjectCharacter), 0x00000000000a001d, Z_Construct_UClass_UCameraComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
@@ -61,12 +61,12 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation"));
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("ProjectCharacter.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("ProjectCharacter.h"));
-				MetaData->SetValue(NewProp_IdleAnimation, TEXT("Category"), TEXT("Animations"));
-				MetaData->SetValue(NewProp_IdleAnimation, TEXT("ModuleRelativePath"), TEXT("ProjectCharacter.h"));
-				MetaData->SetValue(NewProp_IdleAnimation, TEXT("ToolTip"), TEXT("The animation to play while idle (standing still)"));
-				MetaData->SetValue(NewProp_RunningAnimation, TEXT("Category"), TEXT("Animations"));
-				MetaData->SetValue(NewProp_RunningAnimation, TEXT("ModuleRelativePath"), TEXT("ProjectCharacter.h"));
-				MetaData->SetValue(NewProp_RunningAnimation, TEXT("ToolTip"), TEXT("The animation to play while running around"));
+				MetaData->SetValue(NewProp_Astronaut_Idle2, TEXT("Category"), TEXT("Animations"));
+				MetaData->SetValue(NewProp_Astronaut_Idle2, TEXT("ModuleRelativePath"), TEXT("ProjectCharacter.h"));
+				MetaData->SetValue(NewProp_Astronaut_Idle2, TEXT("ToolTip"), TEXT("The animation to play while idle (standing still)"));
+				MetaData->SetValue(NewProp_Astronaut_Walk, TEXT("Category"), TEXT("Animations"));
+				MetaData->SetValue(NewProp_Astronaut_Walk, TEXT("ModuleRelativePath"), TEXT("ProjectCharacter.h"));
+				MetaData->SetValue(NewProp_Astronaut_Walk, TEXT("ToolTip"), TEXT("The animation to play while running around"));
 				MetaData->SetValue(NewProp_CameraBoom, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_CameraBoom, TEXT("Category"), TEXT("Camera"));
 				MetaData->SetValue(NewProp_CameraBoom, TEXT("EditInline"), TEXT("true"));
@@ -128,7 +128,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Project")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0xE3D9D9B0;
+			Guid.A = 0x2664D78E;
 			Guid.B = 0x462C3D1F;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

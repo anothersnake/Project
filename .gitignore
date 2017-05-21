@@ -111,3 +111,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+Project/Content/2dSideScrollerCPP/Maps/2DSideScrollerExampleMap.umap
+Project/Intermediate/CachedAssetRegistry.bin
+Project/Saved/AutoScreenshot.png
+Project/Saved/Config/Windows/EditorPerProjectUserSettings.ini
+Project/Saved/Logs/Project.log
