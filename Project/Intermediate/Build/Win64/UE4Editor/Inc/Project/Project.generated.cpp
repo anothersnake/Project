@@ -12,7 +12,15 @@ void EmptyLinkFunctionForGeneratedCodeProject() {}
 	void AAsteroid1::StaticRegisterNativesAAsteroid1()
 	{
 	}
-	IMPLEMENT_CLASS(AAsteroid1, 2620588711);
+	IMPLEMENT_CLASS(AAsteroid1, 568146580);
+	void ACharacterTest::StaticRegisterNativesACharacterTest()
+	{
+	}
+	IMPLEMENT_CLASS(ACharacterTest, 3493586144);
+	void AComet::StaticRegisterNativesAComet()
+	{
+	}
+	IMPLEMENT_CLASS(AComet, 2051895120);
 	void AProjectCharacter::StaticRegisterNativesAProjectCharacter()
 	{
 	}
@@ -24,8 +32,8 @@ void EmptyLinkFunctionForGeneratedCodeProject() {}
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AActor();
-	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UShapeComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
 	PAPER2D_API class UClass* Z_Construct_UClass_APaperCharacter();
 	PAPER2D_API class UClass* Z_Construct_UClass_UPaperFlipbook_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
@@ -34,6 +42,10 @@ void EmptyLinkFunctionForGeneratedCodeProject() {}
 
 	PROJECT_API class UClass* Z_Construct_UClass_AAsteroid1_NoRegister();
 	PROJECT_API class UClass* Z_Construct_UClass_AAsteroid1();
+	PROJECT_API class UClass* Z_Construct_UClass_ACharacterTest_NoRegister();
+	PROJECT_API class UClass* Z_Construct_UClass_ACharacterTest();
+	PROJECT_API class UClass* Z_Construct_UClass_AComet_NoRegister();
+	PROJECT_API class UClass* Z_Construct_UClass_AComet();
 	PROJECT_API class UClass* Z_Construct_UClass_AProjectCharacter_NoRegister();
 	PROJECT_API class UClass* Z_Construct_UClass_AProjectCharacter();
 	PROJECT_API class UClass* Z_Construct_UClass_AProjectGameMode_NoRegister();
@@ -58,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeProject() {}
 
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-				UProperty* NewProp_MyMesh = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MyMesh"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(MyMesh, AAsteroid1), 0x0000000000080009, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+				UProperty* NewProp_SpeedScale = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SpeedScale"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(SpeedScale, AAsteroid1), 0x0000000000000001);
 				UProperty* NewProp_Root = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Root"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(Root, AAsteroid1), 0x0000000000080009, Z_Construct_UClass_UShapeComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->StaticLink();
@@ -66,9 +78,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Asteroid1.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Asteroid1.h"));
-				MetaData->SetValue(NewProp_MyMesh, TEXT("Category"), TEXT("Asteroid1"));
-				MetaData->SetValue(NewProp_MyMesh, TEXT("EditInline"), TEXT("true"));
-				MetaData->SetValue(NewProp_MyMesh, TEXT("ModuleRelativePath"), TEXT("Asteroid1.h"));
+				MetaData->SetValue(NewProp_SpeedScale, TEXT("Category"), TEXT("Asteroid1"));
+				MetaData->SetValue(NewProp_SpeedScale, TEXT("ModuleRelativePath"), TEXT("Asteroid1.h"));
 				MetaData->SetValue(NewProp_Root, TEXT("Category"), TEXT("Asteroid1"));
 				MetaData->SetValue(NewProp_Root, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_Root, TEXT("ModuleRelativePath"), TEXT("Asteroid1.h"));
@@ -80,6 +91,78 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AAsteroid1(Z_Construct_UClass_AAsteroid1, TEXT("AAsteroid1"));
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AAsteroid1);
+	UClass* Z_Construct_UClass_ACharacterTest_NoRegister()
+	{
+		return ACharacterTest::StaticClass();
+	}
+	UClass* Z_Construct_UClass_ACharacterTest()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_ACharacter();
+			Z_Construct_UPackage_Project();
+			OuterClass = ACharacterTest::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("CharacterTest.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("CharacterTest.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ACharacterTest(Z_Construct_UClass_ACharacterTest, TEXT("ACharacterTest"));
+	DEFINE_VTABLE_PTR_HELPER_CTOR(ACharacterTest);
+	UClass* Z_Construct_UClass_AComet_NoRegister()
+	{
+		return AComet::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AComet()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage_Project();
+			OuterClass = AComet::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_SpeedScale = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SpeedScale"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(SpeedScale, AComet), 0x0000000000000001);
+				UProperty* NewProp_Root = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Root"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(Root, AComet), 0x0000000000080009, Z_Construct_UClass_UShapeComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Comet.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Comet.h"));
+				MetaData->SetValue(NewProp_SpeedScale, TEXT("Category"), TEXT("Comet"));
+				MetaData->SetValue(NewProp_SpeedScale, TEXT("ModuleRelativePath"), TEXT("Comet.h"));
+				MetaData->SetValue(NewProp_Root, TEXT("Category"), TEXT("Comet"));
+				MetaData->SetValue(NewProp_Root, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_Root, TEXT("ModuleRelativePath"), TEXT("Comet.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AComet(Z_Construct_UClass_AComet, TEXT("AComet"));
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AComet);
 	UClass* Z_Construct_UClass_AProjectCharacter_NoRegister()
 	{
 		return AProjectCharacter::StaticClass();
@@ -178,8 +261,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Project")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0x6E8D3DC2;
-			Guid.B = 0x9FFADC24;
+			Guid.A = 0x03238A7E;
+			Guid.B = 0x2E966032;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

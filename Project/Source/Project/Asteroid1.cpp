@@ -13,8 +13,7 @@ AAsteroid1::AAsteroid1()
 	Root = CreateDefaultSubobject<UBoxComponent>(TEXT("Root")); 
 	RootComponent = Root; 
 
-	MyMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MyMesh")); 
-	MyMesh -> AttachTo(RootComponent);
+	SpeedScale = 0.0f; 
 
 
 
@@ -31,6 +30,13 @@ void AAsteroid1::BeginPlay()
 void AAsteroid1::Tick( float DeltaTime )
 {
 	Super::Tick( DeltaTime );
+
+	FVector NewLocation = GetActorLocation(); 
+	float DeltaHeight = (FMath::Sin(RunningTime + DeltaTime) - FMath::Sin(RunningTime)); 
+	NewLocation.Z += DeltaHeight * SpeedScale; 
+	RunningTime += DeltaTime; 
+	SetActorLocation(NewLocation);
+
 
 }
 
