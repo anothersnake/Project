@@ -5,6 +5,9 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
+#ifndef PROJECT_Asteroid1_generated_h
+	#include "Asteroid1.h"
+#endif
 #ifndef PROJECT_ProjectCharacter_generated_h
 	#include "ProjectCharacter.h"
 #endif
