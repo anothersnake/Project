@@ -9,6 +9,10 @@
 #include "Project.generated.dep.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeProject() {}
+	void AAsteroid1::StaticRegisterNativesAAsteroid1()
+	{
+	}
+	IMPLEMENT_CLASS(AAsteroid1, 2620588711);
 	void AProjectCharacter::StaticRegisterNativesAProjectCharacter()
 	{
 	}
@@ -19,17 +23,63 @@ void EmptyLinkFunctionForGeneratedCodeProject() {}
 	IMPLEMENT_CLASS(AProjectGameMode, 372144920);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
+	ENGINE_API class UClass* Z_Construct_UClass_AActor();
+	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_UShapeComponent_NoRegister();
 	PAPER2D_API class UClass* Z_Construct_UClass_APaperCharacter();
 	PAPER2D_API class UClass* Z_Construct_UClass_UPaperFlipbook_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
 
+	PROJECT_API class UClass* Z_Construct_UClass_AAsteroid1_NoRegister();
+	PROJECT_API class UClass* Z_Construct_UClass_AAsteroid1();
 	PROJECT_API class UClass* Z_Construct_UClass_AProjectCharacter_NoRegister();
 	PROJECT_API class UClass* Z_Construct_UClass_AProjectCharacter();
 	PROJECT_API class UClass* Z_Construct_UClass_AProjectGameMode_NoRegister();
 	PROJECT_API class UClass* Z_Construct_UClass_AProjectGameMode();
 	PROJECT_API class UPackage* Z_Construct_UPackage_Project();
+	UClass* Z_Construct_UClass_AAsteroid1_NoRegister()
+	{
+		return AAsteroid1::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AAsteroid1()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage_Project();
+			OuterClass = AAsteroid1::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_MyMesh = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MyMesh"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(MyMesh, AAsteroid1), 0x0000000000080009, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+				UProperty* NewProp_Root = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Root"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(Root, AAsteroid1), 0x0000000000080009, Z_Construct_UClass_UShapeComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Asteroid1.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Asteroid1.h"));
+				MetaData->SetValue(NewProp_MyMesh, TEXT("Category"), TEXT("Asteroid1"));
+				MetaData->SetValue(NewProp_MyMesh, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_MyMesh, TEXT("ModuleRelativePath"), TEXT("Asteroid1.h"));
+				MetaData->SetValue(NewProp_Root, TEXT("Category"), TEXT("Asteroid1"));
+				MetaData->SetValue(NewProp_Root, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_Root, TEXT("ModuleRelativePath"), TEXT("Asteroid1.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AAsteroid1(Z_Construct_UClass_AAsteroid1, TEXT("AAsteroid1"));
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AAsteroid1);
 	UClass* Z_Construct_UClass_AProjectCharacter_NoRegister()
 	{
 		return AProjectCharacter::StaticClass();
@@ -128,8 +178,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Project")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0x2664D78E;
-			Guid.B = 0x462C3D1F;
+			Guid.A = 0x6E8D3DC2;
+			Guid.B = 0x9FFADC24;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

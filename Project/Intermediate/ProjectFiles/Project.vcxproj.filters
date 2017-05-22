@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\Project.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{2B10B532-9185-4C12-8F80-CF9D5DC94D72}</UniqueIdentifier>
+			<UniqueIdentifier>{D1FF3590-D516-49B6-8B1A-41F83E2F33B2}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\Project.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{CDA24C6D-90D1-47A5-8B4F-A8EA92165825}</UniqueIdentifier>
+			<UniqueIdentifier>{23EB0F0C-AA60-4EDD-9F6B-E3DF2311427D}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,8 +31,14 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\Project">
-			<UniqueIdentifier>{9AA151EB-A0C6-4D7C-826D-A4E368F81069}</UniqueIdentifier>
+			<UniqueIdentifier>{A15EB0B8-2EA8-4294-9951-2D2CDAAB803C}</UniqueIdentifier>
 		</Filter>
+		<ClCompile Include="..\..\Source\Project\Asteroid1.cpp">
+			<Filter>Source\Project</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Project\Asteroid1.h">
+			<Filter>Source\Project</Filter>
+		</ClInclude >
 		<None Include="..\..\Source\Project\Project.Build.cs">
 			<Filter>Source\Project</Filter>
 		</None >
