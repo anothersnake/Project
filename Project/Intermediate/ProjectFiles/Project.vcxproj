@@ -259,6 +259,8 @@
 		<None Include="..\..\Config\DefaultEngine.ini" />
 		<None Include="..\..\Config\DefaultGame.ini" />
 		<None Include="..\..\Config\DefaultInput.ini" />
+		<ClCompile Include="..\..\Source\Project\Asteroid1.cpp" />
+		<ClInclude Include="..\..\Source\Project\Asteroid1.h" />
 		<None Include="..\..\Source\Project\Project.Build.cs" />
 		<ClCompile Include="..\..\Source\Project\Project.cpp" />
 		<ClInclude Include="..\..\Source\Project\Project.h" />
