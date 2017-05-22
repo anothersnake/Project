@@ -8,6 +8,9 @@
 #ifndef PROJECT_Asteroid1_generated_h
 	#include "Asteroid1.h"
 #endif
+#ifndef PROJECT_CometReal_generated_h
+	#include "CometReal.h"
+#endif
 #ifndef PROJECT_ProjectCharacter_generated_h
 	#include "ProjectCharacter.h"
 #endif

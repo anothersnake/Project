@@ -24,7 +24,7 @@ public:
 	UShapeComponent* Root; 
 
 	UPROPERTY(EditAnywhere)
-	UStaticMeshComponent* MyMesh; 
+	float SpeedScale; 
 
 	float RunningTime; 
 	
